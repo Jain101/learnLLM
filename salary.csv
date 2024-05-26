@@ -1,0 +1,14 @@
+work_year,experience_level,employment_type,job_title,salary,salary_currency,salary_in_usd,employee_residence,remote_ratio,company_location,company_size
+2024,MI,FT,Data Scientist,120000,USD,120000,AU,0,AU,S
+2024,MI,FT,Data Scientist,70000,USD,70000,AU,0,AU,S
+2024,MI,CT,Data Scientist,130000,USD,130000,US,0,US,M
+2024,MI,CT,Data Scientist,110000,USD,110000,US,0,US,M
+2024,MI,FT,Data Science Manager,240000,USD,240000,US,0,US,M
+2024,MI,FT,Data Science Manager,180000,USD,180000,US,0,US,M
+2024,SE,FT,Business Intelligence Engineer,202800,USD,202800,US,0,US,M
+2024,SE,FT,Business Intelligence Engineer,115000,USD,115000,US,0,US,M
+2024,SE,FT,Data Architect,80000,GBP,100000,GB,0,GB,M
+2024,SE,FT,Data Architect,45000,GBP,56250,GB,0,GB,M
+2024,SE,FT,Data Analyst,90000,CAD,69230,CA,0,CA,M
+2024,SE,FT,Data Analyst,75000,CAD,57692,CA,0,CA,M
+2024,MI,FT,Data Analyst,112300,USD,112300,US,0,US,M
