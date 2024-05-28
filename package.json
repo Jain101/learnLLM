@@ -17,8 +17,17 @@
     "@langchain/google-vertexai": "^0.0.16",
     "@langchain/groq": "^0.0.12",
     "@langchain/openai": "^0.0.33",
+    "@prisma/client": "^5.14.0",
+    "axios": "^1.7.2",
+    "csv-parser": "^3.0.0",
     "d3-dsv": "^2.0.0",
     "dotenv": "^16.4.5",
-    "langchain": "^0.2.1"
+    "langchain": "^0.2.1",
+    "mysql": "^2.18.1",
+    "papaparse": "^5.4.1",
+    "pg": "^8.11.5",
+    "prisma": "^5.14.0",
+    "sqlite3": "^5.1.7",
+    "typeorm": "^0.3.20"
   }
 }

@@ -26,6 +26,7 @@ async function runModel() {
     // prompt
     const prompt = ChatPromptTemplate.fromTemplate(`
         You are an ML engineer. Analyse the given dataset and Answer the user's question based on the given dataset. 
+        When asked about totals, sum up the relevant numbers. When asked about averages, calculate the average based on the provided numbers. Provide a detailed answer explaining your steps.
         context : {context}
         input: {input}
     `)
@@ -39,8 +40,8 @@ async function runModel() {
     })
     // split docs
     const splitter = new RecursiveCharacterTextSplitter({
-        chunkSize: 200,
-        chunkOverlap: 20,
+        chunkSize: 2000,
+        chunkOverlap: 100,
     });
     const splitDocs = await splitter.splitDocuments(docs)
     // embed docs
@@ -51,7 +52,7 @@ async function runModel() {
         modelEmbedding,
     });
     const retriever = vectorStore.asRetriever({
-        k: 3,
+        k: 4
     })
     const retrievalChain = await createRetrievalChain({
         retriever,

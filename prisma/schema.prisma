@@ -1,0 +1,29 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Engineers {
+  id                 String @id @default(uuid())
+  work_year          String
+  experience_level   String
+  employment_type    String
+  job_title          String
+  salary             String
+  salary_currency    String
+  salary_in_usd      String
+  employee_residence String
+  remote_ratio       String
+  company_location   String
+  company_size       String
+}
